@@ -91,7 +91,7 @@ jlpm jest          # unit tests
 ```
 
 The browser test in `test/` runs the installed extension in a real JupyterLab
-against a stand-in API. See [test/README.md](test/README.md).
+against a stand-in API. See [test/README.md](https://github.com/asyntai/jupyterlab-asyntai-ai-assistant/blob/main/test/README.md).
 
 ## License
 
