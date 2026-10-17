@@ -1,0 +1,27 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "Asyntai AI Assistant",
+  "description": "Settings for the Asyntai AI Assistant panel.",
+  "type": "object",
+  "properties": {
+    "apiKey": {
+      "type": "string",
+      "title": "API key",
+      "description": "Your Asyntai API key. Get it at https://asyntai.com/settings/api/",
+      "default": ""
+    },
+    "websiteId": {
+      "type": ["integer", "null"],
+      "title": "Website ID",
+      "description": "The website whose knowledge base the panel asks. The panel sets this when you pick a website. Empty means your primary website.",
+      "default": null
+    },
+    "apiBaseUrl": {
+      "type": "string",
+      "title": "API address",
+      "description": "The address of the Asyntai API. Keep the default.",
+      "default": "https://asyntai.com"
+    }
+  },
+  "additionalProperties": false
+}

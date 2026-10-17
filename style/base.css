@@ -1,0 +1,171 @@
+/*
+    Asyntai AI Assistant panel. Only JupyterLab theme variables are used, so
+    the panel follows the light, dark and high-contrast themes.
+*/
+
+.jp-AsyntaiPanel {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  padding: 12px;
+  overflow: auto;
+  background: var(--jp-layout-color1);
+  color: var(--jp-ui-font-color1);
+  font-family: var(--jp-ui-font-family);
+  font-size: var(--jp-ui-font-size1);
+  box-sizing: border-box;
+}
+
+.jp-AsyntaiPanel-title {
+  margin: 0 0 12px;
+  font-size: var(--jp-ui-font-size2);
+  font-weight: 600;
+}
+
+.jp-AsyntaiPanel-key,
+.jp-AsyntaiPanel-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+}
+
+.jp-AsyntaiPanel-chat {
+  flex: 1 1 auto;
+}
+
+.jp-AsyntaiPanel [hidden] {
+  display: none !important;
+}
+
+.jp-AsyntaiPanel-text {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.jp-AsyntaiPanel a {
+  color: var(--jp-content-link-color);
+}
+
+.jp-AsyntaiPanel-input,
+.jp-AsyntaiPanel-select,
+.jp-AsyntaiPanel-question {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 8px;
+  border: var(--jp-border-width) solid var(--jp-border-color1);
+  border-radius: var(--jp-border-radius);
+  background: var(--jp-input-background);
+  color: var(--jp-ui-font-color0);
+  font-family: var(--jp-ui-font-family);
+  font-size: var(--jp-ui-font-size1);
+}
+
+.jp-AsyntaiPanel-question {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.jp-AsyntaiPanel-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.jp-AsyntaiPanel-label {
+  width: 100%;
+  color: var(--jp-ui-font-color2);
+  font-size: var(--jp-ui-font-size0);
+}
+
+.jp-AsyntaiPanel-toolbar .jp-AsyntaiPanel-select {
+  flex: 1 1 140px;
+  width: auto;
+}
+
+.jp-AsyntaiPanel-button {
+  align-self: flex-start;
+}
+
+.jp-AsyntaiPanel-messages {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 80px;
+  overflow-y: auto;
+}
+
+.jp-AsyntaiPanel-message {
+  padding: 8px 10px;
+  border-radius: var(--jp-border-radius);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.jp-AsyntaiPanel-message.jp-mod-question {
+  align-self: flex-end;
+  max-width: 90%;
+  background: var(--jp-layout-color3);
+  white-space: pre-wrap;
+}
+
+.jp-AsyntaiPanel-message.jp-mod-answer {
+  border: var(--jp-border-width) solid var(--jp-border-color2);
+  background: var(--jp-layout-color0);
+}
+
+.jp-AsyntaiPanel-answer .jp-RenderedMarkdown {
+  padding: 0;
+}
+
+.jp-AsyntaiPanel-answer .jp-RenderedMarkdown > :first-child {
+  margin-top: 0;
+}
+
+.jp-AsyntaiPanel-answer .jp-RenderedMarkdown > :last-child {
+  margin-bottom: 0;
+}
+
+.jp-AsyntaiPanel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.jp-AsyntaiPanel-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.jp-AsyntaiPanel-disclosure {
+  margin: 0;
+  color: var(--jp-ui-font-color2);
+  font-size: var(--jp-ui-font-size0);
+}
+
+.jp-AsyntaiPanel-status {
+  margin: 0;
+  color: var(--jp-ui-font-color2);
+}
+
+.jp-AsyntaiPanel-status.jp-mod-error {
+  color: var(--jp-error-color1);
+}
+
+.jp-AsyntaiPanel-disclosure:empty,
+.jp-AsyntaiPanel-status:empty {
+  display: none;
+}
+
+.jp-AsyntaiPanel-linkButton {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--jp-content-link-color);
+  cursor: pointer;
+  font-size: var(--jp-ui-font-size0);
+}

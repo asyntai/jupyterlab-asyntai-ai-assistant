@@ -1,0 +1,17 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.6.5
+_src_path: https://github.com/jupyterlab/extension-template
+advanced: false
+author_email: hello@asyntai.com
+author_name: Asyntai
+has_ai_rules: false
+has_binder: false
+has_settings: true
+kind: frontend
+labextension_name: jupyterlab-asyntai-ai-assistant
+project_short_description: Ask your Asyntai knowledge base from a JupyterLab side
+    panel.
+python_name: jupyterlab_asyntai_ai_assistant
+repository: https://github.com/asyntai/jupyterlab-asyntai-ai-assistant
+test: true
+
